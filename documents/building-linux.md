@@ -3,7 +3,8 @@ SPDX-FileCopyrightText: 2024 shadPS4 Emulator Project
 SPDX-License-Identifier: GPL-2.0-or-later
 -->
 
-## ShadPS4-QT Build Setup for Linux Mint.
+## ShadPS4-QT Build Setup for Linux Mint 22 <br>
+#### (ShadPS4 builds on 21, but doesn't run)
 
 #### Add ubuntu-toolchain-r/test : Required for Linux Mint
 ```
