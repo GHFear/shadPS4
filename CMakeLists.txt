@@ -6,6 +6,10 @@ cmake_minimum_required(VERSION 3.16.3)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Force gcc-13 / g++-13 usage. 
+set(CMAKE_C_COMPILER "/usr/bin/gcc-13")
+set(CMAKE_CXX_COMPILER "/usr/bin/g++-13")
+
 if(APPLE)
     enable_language(OBJC)
     set(CMAKE_OSX_DEPLOYMENT_TARGET 11)
