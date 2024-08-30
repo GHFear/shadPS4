@@ -65,6 +65,11 @@ Check the build instructions for [**Windows**](https://github.com/shadps4-emu/sh
 
 Check the build instructions for [**Linux**](https://github.com/shadps4-emu/shadPS4/blob/main/documents/building-linux.md).
 
+## Linux Mint 22
+
+Just run setup.sh <br>
+(setup created by GHFear)
+
 ## Building status
 
 <details>
