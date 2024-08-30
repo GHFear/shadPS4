@@ -9,7 +9,7 @@ SPDX-License-Identifier: GPL-2.0-or-later
 ```
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 ```
-#### Add gcc-13 and g++-13 : Required for Linux Mint
+#### Install gcc-13 and g++-13 : Required for Linux Mint
 ```
 sudo apt-get update <br>
 sudo apt-get install gcc-13
@@ -40,9 +40,9 @@ cmake -S . -B build/  -DENABLE_QT_GUI=ON
 cd build/
 ```
 
-#### Parallel build project with cmake.
+#### Parallel build project with cmake
 ```
 cmake --build . --parallel$(nproc)
 ```
 
-#### shadPS4 executable will be inside "shadPS4/build" directory.
+#### shadPS4 executable will be inside "shadPS4/build" directory
