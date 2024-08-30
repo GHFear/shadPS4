@@ -25,15 +25,20 @@ sudo apt-get update && sudo apt install libx11-dev libxext-dev libwayland-dev li
 sudo apt-get install build-essential libasound2-dev libpulse-dev libopenal-dev zlib1g-dev libedit-dev libvulkan-dev libudev-dev git libevdev-dev libsdl2-2.0 libsdl2-dev libjack-dev libsndio-dev
 ```
 
-#### Clone ShadPS4 repository recursively.
+#### Clone ShadPS4 repository recursively
 ```
-git clone --recursive https://github.com/shadps4-emu/shadPS4.git
+git clone --recursive https://github.com/GHFear/shadPS4.git
 cd shadPS4
+```
+
+#### Copy patched libavutil/error.h
+```
+cp "externals/patched-libavutil-error/error.h" "externals/ffmpeg-core/include/libavutil/error.h"
 ```
 
 #### Generate the build directory in the shadPS4 directory with QT GUI enabled
 ```
-cmake -S . -B build/  -DENABLE_QT_GUI=ON
+cmake -S . -B build/ -DCMAKE_C_COMPILER="/usr/bin/gcc-13" -DCMAKE_CXX_COMPILER="/usr/bin/g++-13" -DENABLE_QT_GUI=ON
 ```
 
 #### Enter the build directory
@@ -47,3 +52,4 @@ cmake --build . --parallel$(nproc)
 ```
 
 #### shadPS4 executable will be inside "shadPS4/build" directory
+
