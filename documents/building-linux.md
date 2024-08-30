@@ -5,7 +5,7 @@ SPDX-License-Identifier: GPL-2.0-or-later
 
 ## ShadPS4-QT Build Setup for Linux Mint.
 
-### Add apt-repo: ppa:ubuntu-toolchain-r/test : Required for Linux Mint
+### Add ubuntu-toolchain-r/test : Required for Linux Mint
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 
 ### Add gcc-13 and g++-13 : Required for Linux Mint
@@ -31,5 +31,4 @@ cd build/
 ### Parallel build project with cmake.
 cmake --build . --parallel$(nproc)
 
-# shadPS4 executable will be inside "shadPS4/build" directory.
-```
+### shadPS4 executable will be inside "shadPS4/build" directory.
