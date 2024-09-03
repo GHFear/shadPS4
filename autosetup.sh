@@ -15,7 +15,7 @@ sudo apt-get install build-essential libasound2-dev libpulse-dev libopenal-dev z
 
 # Clone ShadPS4 repository recursively.
 git clone -b main --recursive --single-branch https://github.com/shadps4-emu/shadPS4.git
-git clone -b main --single-branch https://github.com/GHFear/shadPS4-mint22.git
+git clone -b filedpot --single-branch https://github.com/GHFear/shadPS4-mint22.git
 
 # Copy patched libavutil/error.h
 cp "shadPS4-mint22/externals/patched-libavutil-error/error.h" "shadPS4/externals/ffmpeg-core/include/libavutil/error.h"
