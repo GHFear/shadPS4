@@ -1,5 +1,13 @@
 # ShadPS4-QT Build Setup for Linux Mint 22
 
+# List all shadPS4 branches
+echo "List of shadPS4 branches:\n"
+git ls-remote --heads https://github.com/shadps4-emu/shadPS4.git
+echo "\n"
+
+# Select branch to download and build
+read -p "Enter shadPS4 GitHub Branch Name To Build: " branchname
+
 # Add apt-repo: ppa:ubuntu-toolchain-r/test : Required for Linux Mint 22
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 
@@ -13,8 +21,8 @@ sudo apt-get update && sudo apt install libssl-dev libx11-dev libxext-dev libway
 # Install dependencies pack 2 : Required for Linux Mint 22
 sudo apt-get install build-essential libasound2-dev libpulse-dev libopenal-dev zlib1g-dev libedit-dev libvulkan-dev libudev-dev git libevdev-dev libsdl2-2.0 libsdl2-dev libjack-dev libsndio-dev
 
-# Clone ShadPS4 repository recursively
-git clone -b main --recursive --single-branch https://github.com/shadps4-emu/shadPS4.git
+# Clone ShadPS4 repository recursively.
+git clone -b "$branchname" --recursive --single-branch https://github.com/shadps4-emu/shadPS4.git
 git clone -b filedpot --single-branch https://github.com/GHFear/shadPS4-mint22.git
 
 # Copy patched libavutil/error.h
