@@ -6,7 +6,12 @@ git ls-remote --heads https://github.com/shadps4-emu/shadPS4.git
 echo "\n"
 
 # Select branch to download and build
-read -p "Enter shadPS4 GitHub Branch Name To Build: " branchname
+read -p "Enter shadPS4 branch path: " branchpath
+
+# Remove path from branch name.
+prefix="refs/heads/"
+branchname=${branchpath#"$prefix"}
+echo "\nYou selected branch: $branchname\n"
 
 # Add apt-repo: ppa:ubuntu-toolchain-r/test : Required for Linux Mint 22
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test

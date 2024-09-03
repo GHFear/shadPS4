@@ -4,7 +4,10 @@
 `Run autosetup.sh on Linux Mint 22`
 
 #### Step 2:
-`Go to "shadPS4/build" and run "shadps4"`
+`Select (copy/paste) shadps4 branch path and hit ENTER`
 
 #### Step 3:
+`Go to "shadPS4/build" and run "shadps4"`
+
+#### Step 4:
 `Done!`
