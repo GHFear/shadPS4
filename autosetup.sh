@@ -45,5 +45,14 @@ cd build/
 # Parallel build project with cmake.
 cmake --build . --parallel$(nproc)
 
-# shadPS4 executable will be inside "shadPS4/build" directory.
+# Build shadPS4 AppImg
+cd "../.github"
+bash linux-appimage-qt.sh
+
+
+# shadPS4 executable can be found inside the "shadPS4/build" directory.
+# Shadps4-qt.AppImage can be found inside the "shadPS4/.github" directory.
+echo "Build completed.\n"
+echo "shadPS4 executable can be found inside the 'shadPS4/build' directory.\n"
+echo "shadPS4 executable can be found inside the 'shadPS4/.github"' directory.\n"
 
