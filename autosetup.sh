@@ -54,5 +54,5 @@ bash linux-appimage-qt.sh
 # Shadps4-qt.AppImage can be found inside the "shadPS4/.github" directory.
 echo "Build completed.\n"
 echo "shadPS4 executable can be found inside the 'shadPS4/build' directory.\n"
-echo "shadPS4 executable can be found inside the 'shadPS4/.github"' directory.\n"
+echo "Shadps4-qt.AppImage can be found inside the 'shadPS4/.github"' directory.\n"
 
